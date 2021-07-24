@@ -12,10 +12,10 @@ from discord.ext.commands.errors import CommandNotFound
 PREFIX = "+"
 OWNER_IDS = [776937055325913108]
 par_parent = Path(__file__).parent.parent.resolve()
-COGS = [path.split("\\")[-1][:-3] for path in glob(f"{par_parent}/cogs/*.py")]
+COGS = [path.split("/")[-1][:-3] for path in glob(f"{par_parent}/cogs/*.py")]
 print(COGS)
 class Bot(Base):
-    
+
     def __init__(self):
         self.PREFIX = PREFIX
         self.guild = None
