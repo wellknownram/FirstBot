@@ -17,7 +17,7 @@ class Translator(Cog):
     @command(name="translate", aliases=["meaning", "tran"])
     async def translate(self, ctx, *, message):
         """
-        Input 3 argumens, the word(e.g boobs), from (e.g en), to (e.g ar)
+        Input 3 argumens, the word(e.g food), from (e.g en), to (e.g ar)
         """
         parts = message.split()
         lt = LibreTranslateAPI("https://translate.astian.org/")
